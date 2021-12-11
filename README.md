@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 Запускаем ```main.py```
 ```bash
-py main.py
+python main.py
 ```
 
 И на выходе получаем сгенерированый файл расписания ```ВчерашняяДата-СегодняшняяДата.docx```
