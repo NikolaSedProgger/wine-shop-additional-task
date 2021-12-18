@@ -22,9 +22,14 @@ def generate_object_shedule(object):
         object_shedule[object].append(exit_time)
     return object_shedule
 
+def get_objects_list(file):
+    with open(file, encoding="utf-8") as f:
+        objects = [line.strip() for line in f]
+    return objects
+
 if __name__ == "__main__":
-    objects = ['ГСМ', 'Стоянка', 'Ангар']
-    
+    objects = get_objects_list("objects.txt")
+
     today_date = datetime.now()
     delta = timedelta(days=1)
     yesterday_date = today_date - delta
